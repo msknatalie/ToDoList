@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;600&display=swap");
+body {
+  position: absolute;
+  width: 336px;
+  height: 236px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+header {
+  width: 336px;
+  height: 28px;
+  background-color: #ffdc40;
+}
+h1 {
+  position: absolute;
+  width: 198px;
+  height: 34px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+#sorting1 {
+  position: absolute;
+  width: 2.5px;
+  height: 12.5px;
+  background: #c4c4c4;
+}
+#sorting2 {
+  position: absolute;
+  width: 2.5px;
+  height: 7.5px;
+  background: #c4c4c4;
+  transform: rotate(-90deg);
+}
+#sorting3 {
+  position: absolute;
+  width: 2.5px;
+  height: 10px;
+  background: #c4c4c4;
+  transform: rotate(-90deg);
+}
+#sorting4 {
+  position: absolute;
+  width: 2.5px;
+  height: 15px;
+  background: #c4c4c4;
+  transform: rotate(-90deg);
+}
+#task {
+  position: absolute;
+  width: 286px;
+  height: 40px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+#delete {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 71px;
+}
+#plus {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background: #9953f1;
+  border-radius: 71px;
+}
+#addPlus {
+  position: absolute;
+  width: 150px;
+  height: 42px;
+  background: #833ae0;
+  border-radius: 71px;
+}
+#add {
+  position: absolute;
+  width: 129px;
+  height: 42px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
