@@ -2,7 +2,8 @@
 body {
   position: absolute;
   width: 336px;
-  height: 236px;
+  min-height: 236px;
+  max-height: 397px;;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
   border-radius: 10px;
@@ -11,54 +12,71 @@ header {
   width: 336px;
   height: 28px;
   background-color: #ffdc40;
+  border-radius: 10px;
 }
 h1 {
   position: absolute;
   width: 198px;
   height: 34px;
   font-family: Roboto;
-  font-style: normal;
+  font-style: bold;
   font-weight: 900;
   font-size: 26px;
   line-height: 30px;
   text-align: center;
   text-transform: capitalize;
   color: #000000;
+  margin: 13px 69px 161px 69px;
 }
 #sorting1 {
   position: absolute;
-  width: 2.5px;
-  height: 12.5px;
-  background: #c4c4c4;
+  width: 7.5px;
+  height: 6.25px;
+  background: #C4C4C4;
+  transform: rotate(-180deg);
+  margin: 71.75px 47.5px 130px 281px;
 }
 #sorting2 {
   position: absolute;
   width: 2.5px;
-  height: 7.5px;
-  background: #c4c4c4;
-  transform: rotate(-90deg);
+  height: 12.5px;
+  background: #C4C4C4;
+  position: absolute
+  margin: 63px 50px 132.5px 283.5px;
 }
 #sorting3 {
   position: absolute;
   width: 2.5px;
-  height: 10px;
-  background: #c4c4c4;
+  height: 7.5px;
+  background: #C4C4C4;
   transform: rotate(-90deg);
+  margin: 64.25px 37.5px 141.25px 291px;
 }
 #sorting4 {
   position: absolute;
   width: 2.5px;
-  height: 15px;
-  background: #c4c4c4;
+  height: 10px;
+  background: #C4C4C4;
   transform: rotate(-90deg);
+  margin: 69.25px 35px 136.25px 291px;
+}
+#sorting5 {
+  position: absolute;
+  width: 2.5px;
+  height: 15px;
+  background: #C4C4C4;
+  transform: rotate(-90deg);
+  margin: 74.25px 30px 131.25px 291px;
 }
 #task {
   position: absolute;
   width: 286px;
-  height: 40px;
+  min-height: 40px;
+  max-height: 200px;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
   border-radius: 10px;
+  margin: 89px 22px 79px 28px;
 }
 #delete {
   position: absolute;
@@ -67,13 +85,15 @@ h1 {
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
   border-radius: 71px;
+  margin: 99px 52px 89px 264px;
 }
 #plus {
   position: absolute;
   width: 42px;
   height: 42px;
-  background: #9953f1;
+  background: #AA68FE;
   border-radius: 71px;
+  margin: 147px 202px 19px 92px;
 }
 #addPlus {
   position: absolute;
@@ -81,8 +101,9 @@ h1 {
   height: 42px;
   background: #833ae0;
   border-radius: 71px;
+  margin: 147px 94px 19px 92px;
 }
-#add {
+#addWord {
   position: absolute;
   width: 129px;
   height: 42px;
@@ -94,5 +115,6 @@ h1 {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: black;
+  margin: 150px 94px 19px 92px;
 }
