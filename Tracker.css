@@ -2,6 +2,7 @@
 body {
   position: absolute;
   width: 336px;
+  height: 260px;
   min-height: 236px;
   max-height: 397px;;
   border: 1px solid #c4c4c4;
@@ -19,54 +20,19 @@ h1 {
   width: 198px;
   height: 34px;
   font-family: Roboto;
-  font-style: bold;
-  font-weight: 900;
   font-size: 26px;
   line-height: 30px;
   text-align: center;
   text-transform: capitalize;
   color: #000000;
-  margin: 13px 69px 161px 69px;
+  margin: 41px 69px 161px 69px;
 }
-#sorting1 {
+#sorting {
   position: absolute;
-  width: 7.5px;
-  height: 6.25px;
-  background: #C4C4C4;
+  width: 25px;
+  height: 15px;
   transform: rotate(-180deg);
   margin: 71.75px 47.5px 130px 281px;
-}
-#sorting2 {
-  position: absolute;
-  width: 2.5px;
-  height: 12.5px;
-  background: #C4C4C4;
-  position: absolute
-  margin: 63px 50px 132.5px 283.5px;
-}
-#sorting3 {
-  position: absolute;
-  width: 2.5px;
-  height: 7.5px;
-  background: #C4C4C4;
-  transform: rotate(-90deg);
-  margin: 64.25px 37.5px 141.25px 291px;
-}
-#sorting4 {
-  position: absolute;
-  width: 2.5px;
-  height: 10px;
-  background: #C4C4C4;
-  transform: rotate(-90deg);
-  margin: 69.25px 35px 136.25px 291px;
-}
-#sorting5 {
-  position: absolute;
-  width: 2.5px;
-  height: 15px;
-  background: #C4C4C4;
-  transform: rotate(-90deg);
-  margin: 74.25px 30px 131.25px 291px;
 }
 #task {
   position: absolute;
@@ -102,19 +68,6 @@ h1 {
   background: #833ae0;
   border-radius: 71px;
   margin: 147px 94px 19px 92px;
+  text-align: 
 }
-#addWord {
-  position: absolute;
-  width: 129px;
-  height: 42px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: black;
-  margin: 150px 94px 19px 92px;
-}
+
