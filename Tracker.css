@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;600&display=swap");
 body {
-  position: absolute;
   width: 336px;
-  height: 260px;
-  min-height: 236px;
+  height: 236px;
   max-height: 397px;;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
@@ -15,46 +13,39 @@ header {
   background-color: #ffdc40;
   border-radius: 10px;
 }
+main {
+  padding: 25px;
+}
 h1 {
-  position: absolute;
-  width: 198px;
-  height: 34px;
-  font-family: Roboto;
   font-size: 26px;
-  line-height: 30px;
   text-align: center;
-  text-transform: capitalize;
   color: #000000;
-  margin: 41px 69px 161px 69px;
+  margin: 10px;
 }
 #sorting {
-  position: absolute;
   width: 25px;
   height: 15px;
-  transform: rotate(-180deg);
-  margin: 71.75px 47.5px 130px 281px;
+  margin-left: 90%;
 }
 #task {
-  position: absolute;
-  width: 286px;
-  min-height: 40px;
-  max-height: 200px;
+  width: 100%;
+  height: 35px;
   border: 1px solid #c4c4c4;
-  box-sizing: border-box;
   border-radius: 10px;
-  margin: 89px 22px 79px 28px;
 }
 #delete {
-  position: absolute;
   width: 20px;
   height: 20px;
   border: 1px solid #c4c4c4;
-  box-sizing: border-box;
   border-radius: 71px;
-  margin: 99px 52px 89px 264px;
+  margin-left: 52px;
+}
+.input-container {
+  display: flex;
+  justify-content: right;
+  height: 35px;
 }
 #plus {
-  position: absolute;
   width: 42px;
   height: 42px;
   background: #AA68FE;
@@ -62,10 +53,9 @@ h1 {
   margin: 147px 202px 19px 92px;
 }
 #addPlus {
-  position: absolute;
   width: 150px;
   height: 42px;
   background: #833ae0;
   border-radius: 71px;
-  margin: 147px 94px 19px 92px;
+  margin-bottom: 19px;
 }
