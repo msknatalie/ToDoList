@@ -1,4 +1,4 @@
-let buttonAdd = document.querySelector("#addPlus");
+let buttonAdd = document.querySelector("#add");
 
 buttonAdd.addEventListener("click", () => {
     document.createElement(p);
