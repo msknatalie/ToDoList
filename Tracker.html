@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <title>Item list</title>
     <link rel="stylesheet" href="Tracker.css"/>
+    <script src="Tracker.js" defer></script>
 </head>
 <body>
     <header></header>
     <main>
         <h1><b>To-Do List</b></h1>
         <img id="sorting" src=img/down.png>
-        <label>
-            <input id="task" type="text" name="text">     
-            <button id="delete">
-            </button>
+        <div id="taskContainer">
+            <label>
+            <input id="task" type="text" name="text">
+            <img id="delete" src="/img/cross.png">
         </input>
-        </label>
-        <img id="add" src="img/add.png">
+            </label>
+        </div>
+        <button id="add"><img id="add" src="img/add.png">
+        </button>
     </main>
     </body>
 </html>
