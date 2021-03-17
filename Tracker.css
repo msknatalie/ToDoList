@@ -2,7 +2,6 @@
 
 body {
   width: 336px;
-  height: 236px;
   max-height: 397px;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
@@ -35,15 +34,14 @@ h1 {
 }
 #taskContainer {
   width: 100%;
-  min-height: 35px;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
   margin-bottom: 10px;
 }
-#task {
+.task {
   width: 286px;
   height: 40px;
-  border: 1px solid #C4C4C4;
+  border: none;
   box-sizing: border-box;
   border-radius: 10px;
 }

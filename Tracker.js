@@ -1,12 +1,11 @@
 let add = document.querySelector("#add");
-let newTask = document.querySelector("#task");
+let newTask = document.querySelector(".task");
 let eachTask = newTask.value;
 let taskContainer = document.querySelector("#taskContainer");
 
 add.addEventListener("click", () => {
         let input = document.createElement('input');
-    //    input.style.width = 286px;
-
+        input.classList.add('task');
         input.innerText = eachTask;
         taskContainer.append(input);
         newTask.value = "";
