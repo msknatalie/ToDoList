@@ -59,13 +59,23 @@ h1 {
   background: #833ae0;
   border-radius: 71px;
   color: white;
-  padding: 0;
-  display: block;
+  display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    text-align: center;
+align-items: center;
 }
 #add:hover {
   position: relative;
   bottom: 2px;
+}
+#round {
+width: 42px;
+height: 42px;
+background: #9953F1;
+border-radius: 71px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
