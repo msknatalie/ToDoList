@@ -39,15 +39,14 @@ h1 {
   margin-bottom: 10px;
 }
 .task {
-  width: 286px;
+  width: 90%;
   height: 40px;
   border: none;
   box-sizing: border-box;
   border-radius: 10px;
 }
-#delete {
-  display: none;
-  width: 20px;
+.delete {
+  width: 5%;
 }
 #delete:hover {
   position: relative;
