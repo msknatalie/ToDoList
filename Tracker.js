@@ -1,19 +1,40 @@
-let add = document.querySelector("#add");
-let newTask = document.querySelector(".task");
-let eachTask = newTask.value;
-let eachTaskContainer = document.querySelector(".eachTaskContainer");
 let taskContainer = document.querySelector("#taskContainer");
 
-add.addEventListener("click", () => {
-        let input = document.createElement('input');
+function download () {
+    let newEachTaskContainer = document.createElement('div');
+    newEachTaskContainer.classList.add('eachTaskContainer'); 
+    let input = document.createElement('input');
         input.classList.add('task');
-        eachTaskContainer.append(input);
-        input.innerText = eachTask;
-        newTask.value = "";
+        newEachTaskContainer.append(input);
         let butDelete = document.createElement('img');
         butDelete.src = "img/cross.png";
         butDelete.classList.add("delete");
-        eachTaskContainer.append(butDelete);
+        newEachTaskContainer.append(butDelete);
+
+        taskContainer.append(newEachTaskContainer);
+
+        butDelete.addEventListener("click", () => {
+            input.remove();
+            butDelete.remove();
+        })
+}
+
+download();
+
+let add = document.querySelector("#add");
+
+add.addEventListener("click", download => {
+    let newEachTaskContainer = document.createElement('div');
+    newEachTaskContainer.classList.add('eachTaskContainer'); 
+    let input = document.createElement('input');
+        input.classList.add('task');
+        newEachTaskContainer.append(input);
+        let butDelete = document.createElement('img');
+        butDelete.src = "img/cross.png";
+        butDelete.classList.add("delete");
+        newEachTaskContainer.append(butDelete);
+
+        taskContainer.append(newEachTaskContainer);
 
         butDelete.addEventListener("click", () => {
             input.remove();
@@ -22,17 +43,16 @@ add.addEventListener("click", () => {
     })
 
 // sorting
-
 let sortingButton = document.querySelector('#sorting');
 let pointer = true;
-let tasks = document.querySelectorAll("#task")
-let taskArray = [...tasks];
 
 sortingButton.addEventListener("click", () => {
+    let tasks = document.querySelectorAll(".task");
+    let taskArray = [...tasks];
     if (pointer === true) {
     taskArray.sort((first, second) => {
-        let pam1 = first.querySelector('input').innerText;
-        let pam2 = second.querySelector('input').innerText;
+        let pam1 = first.querySelector('.task').value;
+        let pam2 = second.querySelector('.task').value;
         if (pam1 > pam2) {
             return 1;
         } else if (pam1 < pam2) {
@@ -41,12 +61,12 @@ sortingButton.addEventListener("click", () => {
             return 0;
         }
     })
-    sortingButton.src = "img/down.png";
+    sortingButton.src = "img/up.png";
     pointer = false;
     } else if (pointer === false) {
     tasksArray.sort((first, second) => {
-        let pam1 = first.querySelector('input').innerText;
-        let pam2 = second.querySelector('input').innerText;
+        let pam1 = first.querySelector('.task').value;
+        let pam2 = second.querySelector('.task').value;
         if (pam1 > pam2) {
             return - 1;
         } else if (pam1 < pam2) {
@@ -55,7 +75,7 @@ sortingButton.addEventListener("click", () => {
             return 0;
         }
     })
-    sortingButton.src = "img/up.png";
+    sortingButton.src = "img/down.png";
     pointer = true;
     }
     tasksArray.forEach(curName => {

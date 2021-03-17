@@ -65,13 +65,10 @@ h1 {
     text-align: center;
 align-items: center;
 }
-#add:hover {
-  position: relative;
-  bottom: 2px;
-}
 #round {
 width: 42px;
 height: 42px;
+margin-left: 0px;
 background: #9953F1;
 border-radius: 71px;
 display: flex;
