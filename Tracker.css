@@ -51,7 +51,8 @@ h1 {
   padding-left: 10px;
 }
 .delete {
-  width: 5%;
+  width: 6%;
+  margin-top: 10px;
 }
 .delete:hover {
   position: relative;
