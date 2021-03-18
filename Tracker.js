@@ -16,6 +16,7 @@ function download() {
   butDelete.addEventListener("click", () => {
     input.remove();
     butDelete.remove();
+    newEachTaskContainer.remove();
   });
 }
 
@@ -33,8 +34,8 @@ sortingButton.addEventListener("click", () => {
   let tasks = document.querySelectorAll(".eachTaskContainer");
   let taskArray = [...tasks];
   console.log(taskArray);
-  
-  if (pointer === true) {
+
+  if (pointer) {
     taskArray.sort((first, second) => {
       let pam1 = first.querySelector("input").value;
       let pam2 = second.querySelector("input").value;
@@ -48,7 +49,7 @@ sortingButton.addEventListener("click", () => {
     });
     sortingButton.src = "img/up.png";
     pointer = false;
-  } else if (pointer === false) {
+  } else {
     taskArray.sort((first, second) => {
       let pam1 = first.querySelector("input").value;
       let pam2 = second.querySelector("input").value;
