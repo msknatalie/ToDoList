@@ -32,6 +32,7 @@ let pointer = true;
 sortingButton.addEventListener("click", () => {
   let tasks = document.querySelectorAll(".eachTaskContainer");
   let taskArray = [...tasks];
+  console.log(taskArray);
   
   if (pointer === true) {
     taskArray.sort((first, second) => {
@@ -48,7 +49,7 @@ sortingButton.addEventListener("click", () => {
     sortingButton.src = "img/up.png";
     pointer = false;
   } else if (pointer === false) {
-    tasksArray.sort((first, second) => {
+    taskArray.sort((first, second) => {
       let pam1 = first.querySelector("input").value;
       let pam2 = second.querySelector("input").value;
       if (pam1 > pam2) {
@@ -62,7 +63,7 @@ sortingButton.addEventListener("click", () => {
     sortingButton.src = "img/down.png";
     pointer = true;
   }
-  tasksArray.forEach((curName) => {
+  taskArray.forEach((curName) => {
     taskContainer.append(curName);
   });
 });

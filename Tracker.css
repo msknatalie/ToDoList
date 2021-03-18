@@ -27,10 +27,12 @@ h1 {
   width: 25px;
   height: 15px;
   margin-left: 90%;
+  opacity: 30%;
 }
 #sorting:hover {
   position: relative;
   bottom: 2px;
+  opacity: 100%;
 }
 #taskContainer {
   width: 100%;
@@ -48,9 +50,11 @@ h1 {
 .delete {
   width: 5%;
 }
-#delete:hover {
+.delete:hover {
   position: relative;
   bottom: 2px;
+  background-color: blueviolet;
+  border-radius: 71px;
 }
 #add {
   width: 150px;
@@ -62,16 +66,18 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    text-align: center;
+    padding-left: 60px;
 align-items: center;
+position: relative;
 }
 #round {
 width: 42px;
 height: 42px;
-margin-left: 0px;
+left: 0px;
 background: #9953F1;
 border-radius: 71px;
 display: flex;
 align-items: center;
 justify-content: center;
+position: absolute;
 }
